@@ -1,0 +1,14 @@
+div.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+div.col {
+  border-bottom: 1px lightgray solid;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+  div.col > span.btn {
+    margin-right: 4px;
+  }

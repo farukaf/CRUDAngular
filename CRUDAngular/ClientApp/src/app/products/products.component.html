@@ -1,0 +1,24 @@
+
+
+<h2>Products</h2>
+<a class="btn btn-primary" [routerLink]="['/Products/Create']">Create</a>
+<hr />
+
+<div class="row">
+  <div class="col"><strong>ID</strong></div>
+  <div class="col"><strong>Nome</strong></div>
+  <div class="col"><strong>Valor de Venda</strong></div>
+  <div class="col">
+
+  </div>
+</div>
+
+<div *ngFor="let product of products;let i = index" class="row">
+  <div class="col">{{product.id}}</div>
+  <div class="col">{{product.name}}</div>
+  <div class="col">{{product.price}}</div>
+  <div class="col">
+    <span class="btn btn-primary" [routerLink]="['Create/'+ product.id]">Edit</span>
+    <span (click)="onDeleteClick(product)" class="btn btn-danger">Delete</span>
+  </div>
+</div>

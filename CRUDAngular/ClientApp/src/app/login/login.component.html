@@ -1,0 +1,17 @@
+
+
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <label>Account</label>
+        <input type="text" id="Username" class="form-control"  />
+
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="Password" class="form-control"  />
+      </div>
+      <div class="input-group">
+        <input type="submit"  [disabled]="loading" class="btn btn-primary"  value="Log In" />
+      </div>
+    </form>

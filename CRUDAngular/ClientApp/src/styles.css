@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+body {
+  background-color: #FAFAFA;
+}
+
+a {
+  color: #0366d6;
+}
+
+h2 {
+  color: #555;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+div.input-group {
+  margin-bottom: 8px;
+}
+
+  div.input-group > label {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #333;
+  }
+
+
+  div.input-group > input[type=text],
+  div.input-group > input[type=password],
+  div.input-group > input[type=number] {
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+  div.input-group > input[type=file] {
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
